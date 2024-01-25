@@ -1,4 +1,7 @@
-export ZSH="$HOME/.oh-my-zsh"
+# Basic .vimrc
+
+# keep files in ~/.zsh
+export ZSH="$HOME/.zsh"
 
 # git information & styling zsh prompt
 autoload -Uz vcs_info
@@ -19,9 +22,9 @@ plugins=(
   zsh-autosuggestions 
   zsh-syntax-highlighting
 )
+source $ZSH/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # aliases
-alias bf='butterfish'
-
-source $ZSH/oh-my-zsh.sh
+alias ls='ls -lh'
 
