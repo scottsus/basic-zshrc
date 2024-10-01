@@ -19,12 +19,11 @@ precmd_functions+=(precmd_vcs_info)
 # plugins
 plugins=(
   git
-  zsh-autosuggestions 
+  zsh-autosuggestions
   zsh-syntax-highlighting
 )
-source $ZSH/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # aliases
 alias ls='ls -lh'
-
